@@ -1,0 +1,14 @@
+h1{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.arbre img{ 
+    height: 80vw;
+    width: 80vw;
+    margin-left:80px;
+}
+body{
+    background-color: rgb(22, 205, 22);
+}
