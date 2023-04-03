@@ -1,0 +1,71 @@
+
+h1{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.arbre{ 
+    height:40vw;
+    width: 40vw;
+    margin :auto;
+}
+body{
+    background-color: rgb(22, 205, 22);
+}
+@media (max-width:700px ){
+    h1{
+        background-color:rgb(22, 205, 22);
+    }
+}
+.infobull{
+    transform: scale(0);
+
+    background-color: black;
+    color : blue;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 8px;
+    box-shadow: 1px 1px 0 0.5px rgb(22, 205, 22);
+
+}
+
+.fa-brands fa-facebook{ 
+    list-style: none;
+}
+
+button{background-color: rgb(22, 205, 22);}
+
+.infobull::before{
+    content:'';
+    position:absolute;
+    border-bottom: 8px solid red;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -15px;
+    margin-left: 1px;
+}
+.logoT{
+    height:10vw;
+    width: 10vw;
+    margin: auto;
+}
+.twiter:hover>.infobull{
+    transform: scale(1) rotatex(0deg);
+}
+
+.Facebook:hover>.infobull{
+    transform: scale(1) rotatex(0deg);
+}
+
+.Gdiv{
+padding: 20px;
+align-items: center;
+flex-direction: row;
+display: flex;
+}
+
