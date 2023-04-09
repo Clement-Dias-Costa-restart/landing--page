@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tetris / JS Game by JEND</title>
+    <meta name="description" content="Tetris Game">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link rel="stylesheet" href="Tetris.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <img id="demo-img" src="http://tetris.planetcode.fr/TetrisDemo.png" alt="Demo" title="Demo">
+
+    <div class="navbar">
+        
+        <button id="start_game"><i class="far fa-play-circle"></i></button>
+
+        <button id="restart_game"><i class="far fa-play-circle"></i></button>
+
+
+
+        <button id="pause_game"><i class="far fa-pause-circle"></i></button>
+
+        <button id="continue_game"><i class='fas fa-redo'></i></button>
+
+        <div class="dropdown">
+            <button id="gamepad_controls" class="dropdown"><i class="fas fa-gamepad"></i></button>
+            <div class="dropdown-content">
+                <p style="margin-top:px;"><i class="fas fa-caret-right"></i>&nbsp;&nbsp;Move Right</p>
+                <p><i class="fas fa-caret-left"></i>&nbsp;&nbsp;Move Left</p>
+                <p><i class="fas fa-caret-down"></i>&nbsp;&nbsp;Move Down</p>
+                <p> <span style="font-weight:bold;">&nbsp;W/X</span> = Rotate</p>      
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="gamepad">
+        <div class="controls_1">
+            <button id="arrow-right"><i class="fas fa-caret-right"></i></button>
+            <button id="arrow-left"><i class="fas fa-caret-left"></i></button>
+        </div>
+
+        <div class="controls_2">
+            <button id="arrow-down"><i class="fas fa-caret-down"></i></button>
+            <button id="rotate_piece"><i class="fas fa-cubes"></i></button>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div id="score"></div>
+    <p id="levels"></p>
+    
+    <canvas id="tetris" width="240" height="400" />
+
+    <script src="Tetris.js"></script>
+</body></html>
